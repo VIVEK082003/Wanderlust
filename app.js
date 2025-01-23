@@ -81,15 +81,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// app.get("/demouser", async (req, res, next) => {
-//   let fakeUser = new User({
-//     email: "student@gmail.com",
-//     username: "Student",
-//   });
 
-//   let registeredUser = await User.register(fakeUser, "helloworld");
-//   res.send(registeredUser);
-// });
 
 app.get("/", (req, res) => {
   res.send("Hi, I am root");
